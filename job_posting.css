@@ -1,0 +1,34 @@
+.admin_dashboard .admin_page .post_content{
+    padding: 30px;
+    height: auto;
+}
+.admin_dashboard .admin_page .post_content label{
+    font-size: 18px;
+    font-weight: 500;
+}
+.container .btn_group{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.btn_group .btn{
+    width: 120px;
+    padding: 2px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #3549fb;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.btn_group a{
+    color: red;
+}
+.btn_group .btn:hover {
+    opacity: 0.6;
+}

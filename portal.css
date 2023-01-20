@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* SIDE MENU */
+body {
+    display: flex;
+    background-color: #E9F0F8;
+    width: 100vw;
+    height: 100vh;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+body nav{
+    display: block;
+    width: 13%;
+    height: 100vh;
+}
+body nav .navigation .sidenav {
+    width: 0vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+.sidenav .admin_details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgb(117, 230, 139), rgb(49, 144, 223));
+    height: 25vh;
+    width: 100%;
+}
+.sidenav .admin_details li{
+    list-style: none;
+    text-align: center;
+    margin-top: 15px;
+}
+.sidenav .admin_details i{
+    font-size: 80px;
+}
+.sidenav .Widgets{
+    margin-top: 20px;
+    height: 100%;
+    border-top: 2px solid mediumspringgreen;
+}
+.sidenav .Widgets a {
+    margin-top: 0px;
+    line-height: 20px;
+    padding: 15px 0px 15px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    transition: all 0.3s ease;
+    gap: 10px;
+}
+.sidenav .Widgets .active{
+    background: linear-gradient(to left,#0076C8 2%,white 1%);
+    background-color:#E4F3FA;
+    color: #0076C8;
+}
+body nav .navigation .shift_nav{
+    width: 13vw;
+    background-color:rgb(49, 144, 223);
+}
+  /* HEADER */
+body section{
+    width: 100vw;
+    height: 100vh;
+}
+body section .admin_dashboard{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+}
+.dashboard_header{
+    width: 100%;
+}
+.head_nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    transition: all 0.5s ease-in-out;
+    
+}
+.admin_dashboard h3{
+    margin: 0;
+}
+.shift_header{
+    width: 100vw;
+}
+.head_nav .toggle_btn{
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px 0px 0px 10px;
+    cursor: pointer;
+}
+.head_nav .toggle_btn .hamburger{
+    width: 18px;
+    height: 2px;
+    margin: 10px 5px;
+    background-color: grey;
+    position: absolute;
+    cursor: pointer;
+}
+.head_nav .toggle_btn .hamburger::before,
+.head_nav .toggle_btn .hamburger::after{
+    content: "";
+    width: 18px;
+    height: 2px;
+    background-color: grey;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+.head_nav .toggle_btn .hamburger::before{
+    transform: translateY(-5px);
+}
+.head_nav .toggle_btn .hamburger::after{
+    transform: translateY(5px);
+}
+
+.head_nav .toggle_btn .toggle_arrow{
+    width: 18px;
+    height: 2px;
+    margin: 10px 5px;
+    background-color: grey;
+    position: absolute;
+    cursor: pointer;
+}
+.head_nav .toggle_btn .toggle_arrow::before{
+    width: 10px;
+    height: 2px;
+    margin: -3px -1px;
+    background-color: grey;
+    position: absolute;
+    cursor: pointer;
+    transform: rotate(-40deg);
+}
+.head_nav .toggle_btn .toggle_arrow::after{
+    width: 10px;
+    height: 2px;
+    margin: 4px 0px;
+    background-color: grey;
+    position: absolute;
+    cursor: pointer;
+    transform: rotate(40deg);
+}
+.admin_dashboard .admin_page{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 65px;
+    right: 100px;
+}
+body section .admin_dashboard .shift_dash{
+    width: 80%;
+    right: 60px;
+}
+.admin_dashboard .admin_links{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    position: relative;
+}
+.admin_dashboard .admin_links .current_page{
+    width: 80%;
+}
+.admin_dashboard .admin_links .posting_btn{
+    width: 130px;
+    background-color: aquamarine;
+    border-radius: 50px;
+    position: absolute;
+    right: 0px;
+    background-color: #FC9606;
+}
+.admin_dashboard .admin_links .posting_btn a{
+    line-height: 40px;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+.admin_dashboard .post_content{
+    border: 2px solid silver;
+    margin-top: 30px;
+    height: auto;
+    border-radius: 5px;
+}
+.admin_dashboard .post_content table {
+    width: 95%;
+}
+.admin_dashboard .post_content table th,td {
+    text-align: center;
+}
+.admin_dashboard .post_content .list_header{
+    height: 120px;
+    margin-bottom: 10px;
+}
+.admin_dashboard .post_content .list_header .list_row1{
+    display: flex;
+    padding: 25px 25px 15px 25px;
+}
+.admin_dashboard .post_content .list_header h2{
+    width: 90%;
+    font-size: 30px;
+}
+.admin_dashboard .post_content .list_header a{
+    text-decoration: none;
+}
+
+.admin_dashboard .post_content .list_header .list_row2{
+    display: flex;
+    padding: 0px 25px;
+}
+.admin_dashboard .post_content .list_header .list_row2 .active_status{
+    margin-right: 10px;
+    background-color: #E4F3FA;
+    border:1px solid #0076C8;
+    border-radius: 50px;
+}
+.admin_dashboard .post_content .list_header .list_row2 .recent_status{
+    background-color: #E4F3FA;
+    border:1px solid #0076C8;
+    border-radius: 40px;
+}
+.admin_dashboard .post_content .list_header .list_row2 a{
+    font-size: 14px;
+    line-height: 30px;
+    text-decoration: none;
+    padding: 10px;
+    color: #0076C8;
+}
+.admin_dashboard .post_content .post_list{
+    border-top:2px solid silver;
+    border-bottom:2px solid silver;
+    padding: 20px;
+}
+.admin_dashboard .post_content .post_list .post_title{
+    display: flex;
+    margin-bottom: 10px;
+}
+.admin_dashboard .post_content .post_list .post_details{
+    display: flex;
+}
+.admin_dashboard .post_content .post_list .post_details .post_date, .post_salary, .post_applicants, .post_applied{
+    display: flex;
+    padding-right: 70px;
+    margin-left: 40px;
+}
+.admin_dashboard .post_content .post_list .post_details .div_align{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.admin_dashboard .post_content .post_list .post_details i{
+    font-size: 30px;
+}
+.admin_dashboard .post_content .post_list .post_details h6{
+    line-height: 10px;
+    margin: 0px;
+}
+
+.admin_dashboard .post_content .post_list .post_details .line{
+    width: 2px;
+    height: auto;
+    background-color: silver;
+}
+.admin_dashboard .post_content .post_list .post_details span{
+    color: grey;
+}
