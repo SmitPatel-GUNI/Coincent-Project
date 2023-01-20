@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./index.css?<?php echo time(); ?>">
+  <link rel="stylesheet" href="css/index.css?<?php echo time(); ?>">
 </head>
 <body>
   <nav>
@@ -28,12 +28,12 @@
         <div class="sidenav" id="jsSidenav">
           <a class="closebtn" onclick="closeNav()">&times;</a>
           <a href="#">Home</a>
-          <a href="./job_list.php">Find a Jobs</a>
+          <a href="#">Find a Jobs</a>
           <a href="#">About</a>
           <a href="#">Page</a>
           <a href="#">Contact</a>
-          <a href="#">Register</a>
-          <a href="#">Login</a>
+          <a href="" onclick="show_popup()">Register</a>
+          <a href="./login_form.php">Login</a>
         </div>
         <span class="open_btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
           <script>
@@ -53,7 +53,7 @@
         <h1>Recruit And <br>Get Job At One Place</h1>
         <div class="banner_btn web_btn">
             <a class="recruite_btn hover_btn" href="./job_list.php">Recruit</a>
-            <a class="apply_btn hover_btn" href="./user_portal.php">Apply</a>
+            <a class="apply_btn hover_btn" href="./applicant_dashboard.php">Apply</a>
         </div>
       </div>
     </div>

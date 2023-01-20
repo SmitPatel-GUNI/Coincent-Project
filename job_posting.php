@@ -53,8 +53,8 @@ if (isset($_POST['post'])){
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./portal.css?<?php echo time(); ?>">
-    <link rel="stylesheet" href="./job_posting.css?<?php echo time(); ?>">
+    <link rel="stylesheet" href="./css/portal.css?<?php echo time(); ?>">
+    <link rel="stylesheet" href="./css/job_posting.css?<?php echo time(); ?>">
   </head>
   <body>
   <?php
@@ -68,10 +68,10 @@ if (isset($_POST['post'])){
             <li><?php echo strtok($_SESSION['recruiter_name'],' ');  ?></li>
           </div>
           <div class="Widgets" id="jstoggle">
-            <a href="./job_portal.php"><i class="fa-solid fa-gauge"></i>Dashboard</a>
+            <a href="./recruiter_dashboard.php"><i class="fa-solid fa-gauge"></i>Dashboard</a>
             <a href="./job_posting.php" class="active"><i class="fa-sharp fa-solid fa-gear"></i>Jobs</a>
-            <a href="./index.php"><i class="fa-sharp fa-solid fa-graduation-cap"></i>Contact</a>
-            <a href="./index.php"><i class="fa-solid fa-user-group"></i>About</a>
+            <a href=""><i class="fa-sharp fa-solid fa-graduation-cap"></i>Contact</a>
+            <a href=""><i class="fa-solid fa-user-group"></i>About</a>
             <a href="./log_out.php"><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a>
           </div>
         </div>

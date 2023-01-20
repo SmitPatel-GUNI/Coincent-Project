@@ -20,7 +20,7 @@ else{
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Applicants</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./portal.css?<?php echo time(); ?>"/>
+    <link rel="stylesheet" href="./css/portal.css?<?php echo time(); ?>"/>
     <script src="https://kit.fontawesome.com/3d78ad1d4b.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -32,11 +32,11 @@ else{
             <li><?php echo strtok($_SESSION['recruiter_name'],' ');  ?></li>
           </div>
           <div class="Widgets" id="jstoggle">
-            <a href="./job_portal.php"><i class="fa-solid fa-gauge"></i>Dashboard</a>
+            <a href="./recruiter_dashboard.php"><i class="fa-solid fa-gauge"></i>Dashboard</a>
             <a href="#" class="active"><i class="fa-sharp fa-solid fa-gear"></i>Applicants</a>
             <a href="./job_posting.php"><i class="fa-sharp fa-solid fa-gear"></i>Jobs</a>
-            <a href="./index.php"><i class="fa-sharp fa-solid fa-graduation-cap"></i>Contact</a>
-            <a href="./index.php"><i class="fa-solid fa-user-group"></i>About</a>
+            <a href=""><i class="fa-sharp fa-solid fa-graduation-cap"></i>Contact</a>
+            <a href=""><i class="fa-solid fa-user-group"></i>About</a>
             <a href="./log_out.php"><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a>
           </div>
         </div>

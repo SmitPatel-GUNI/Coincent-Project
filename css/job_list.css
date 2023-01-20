@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.post_container{
+  position: relative;  
+  height: 520px;
+  width: 1075px;
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+.post_container .swiper{
+  width: 970px;
+  padding: 0px 20px;
+}
+.post_container .swiper .h1{
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 40px;
+}
+.post_container .swiper .swiper-slide{
+  margin-bottom: 20px;
+}
+.job-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    height: 85%;
+    width: 450px;
+    padding: 20px 25px;
+    padding: 0px 20px 20px ;
+    background-color: aquamarine;
+}
+.job-content .job_details{
+    height: 90%;
+    overflow: hidden;
+}
+.job-content .job_details .job_title h1,h4{
+    line-height: 25px;
+    font-weight: 650;
+}
+.job-content .job_details .job_desc{
+    overflow: hidden;
+    text-align: justify;
+    line-height: 20px;
+}
+.job-content .job_details h3{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.job-content .job_details p{
+    margin-top: 2px;
+    font-size: 16px;
+    padding-left: 5px;
+}
+.job-content .job_details .about_job p{
+    margin-top: 2px;
+    height: 120px;
+    font-size: 16px;
+    overflow: hidden;
+}
+.job-content .lower_btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+.job-content .btn{
+    padding: 0px;
+}
+.job-content .lower_btns a{
+    text-decoration: none;
+    color:#3549fb;
+}
+.job-content .lower_btns .apply_btn{
+    padding: 8px;
+    font-size: 16px;
+    background-color: #3549fb;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+.job-content .lower_btns .view_btm{
+    font-size: 14px;
+    margin-left: 5px;
+}
+.job-content .lower_btns .part{
+    width: 2px;
+    height: 25px;
+    background-color: grey;
+    position: absolute;
+    margin: 0px 9px;
+}
+.swiper-pagination{
+  position: absolute;
+}
+.swiper-pagination-bullet{
+  height: 2px;
+  width: 30px;
+  border-radius: 50px;
+  background: #FF676D;
+}
+.swiper-button-next, .swiper-button-prev{
+  opacity: 0.7;
+  color: #FF676D;
+  transition: all 0.3s ease;
+}
+.swiper-button-next{
+  right: 2px;
+}
+.swiper-button-prev{
+  left: 2px;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+  opacity: 1;
+  color: #FF676D;
+}
+.job_apply_popup{
+  background-color: aquamarine;
+  border: 3px solid rgb(164, 244, 189);
+  display: block;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  padding: 30px;
+  width: 400px;
+  height: auto;
+  border-radius: 4px;
+  padding: 20px 25px;
+  transition: all 1s ease-in-out;
+}
+@keyframes animation {
+  0%{
+    top: 0%;
+  }
+  100%{
+    top: 20%;
+  }
+}
+.transform-active{
+  animation: animation .4s linear 1 alternate;
+}
+.job_apply_popup .closebtn {
+  position: absolute;
+  right: 5px;
+  top: -10px;
+  font-size: 40px;
+  cursor: pointer;
+  color: grey;
+}
+.job_apply_popup label{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.job_apply_popup input{
+  margin-bottom: 10px;
+}
+.job_apply_popup .file_btn{
+  padding: 1px;
+  border-radius: 3px;
+}
+.job_apply_popup .file_btn:focus{
+  box-shadow: none;
+}
+.btn_group .btn{
+  width: 120px;
+  padding: 2px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.btn_group .submit_btn{
+  background-color: #3549fb;
+}
+.btn_group .close_btn{
+  background-color: grey;
+  outline: none;
+}
+.btn_group a{
+  color: red;
+}
+.btn_group .btn:hover {
+  opacity: 0.6;
+}
